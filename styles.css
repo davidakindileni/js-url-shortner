@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+}
+
+main {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 0.5em;
+}
+
+input,
+button {
+  padding: 0.5rem;
+}
+
+label[for="shortUrl"] {
+  margin-top: 20px;
+}
+
+button {
+  /* padding: 10px 20px; */
+  transition: transform 0.2s ease;
+}
+
+button:hover, button:active {
+  transform: scale(1.1);
+}
+
+#shortUrl {
+  margin-bottom: 5px;
+}
+
+.readOnly {
+  font-size: 0.9em;
+}
+
+#shortenBtn, #findBtn, #delBtn, #exitBtn {
+  margin-top: 1.5em;
+  margin-bottom: 1.4em;
+  color: #ffffff;
+  font-size: 1em;
+  width: 5em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#shortenBtn, #findBtn {
+  margin-right: 10px;
+}
+
+#shortenBtn {
+  background-color: #005FCC /* blue */;
+}
+
+#findBtn {
+  background-color: #0F766E /* green */;
+}
+
+#delBtn {
+  background-color: #B00020 /* red */;
+}
+
+#exitBtn {
+  background-color: #4B5563 /* white */;
+  font-weight: bold;
+  float: right;
+}
+
+.urlListHdr {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#delAllUrls {
+  background-color: #7F1D1D /* white */ ;
+  color: #FFFFFF;
+  font-weight: bold;
+  width: auto;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+hr {
+  /* height: 1em; */
+  /* border: none; */
+  color: black;
+  margin: 8px 0;
+}
+
+#delItemBtn {
+  background-color: red;
+  color: black;
+  border: none;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.delete {
+  width: fit-content;
+}
+
+.input {
+  display: flex;
+  gap: 1rem;
+}
+
+.urlList {
+  padding: 0.5rem;
+}
+
+ul {
+  /* margin: 1rem; */
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 32.5em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 480px;
+  }
+}

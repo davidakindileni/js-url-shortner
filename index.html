@@ -1,0 +1,55 @@
+<!--
+Project Name: Jjs-url-shortner
+Project Description: A project that receives a URL link and shortens it.
+Author: Akinsola David Akindileni
+Date Created: August 29, 2026
+Date Published: September 13, 2026
+Date Last Modified: September 13, 2026
+-->
+
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS URl Shortner</title>
+    <meta name="description" content="A Program that Shortens URLs">
+    <meta name="author" content="Akinsola David Akindileni">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>URL Shortner</h1>
+    <main>
+        <label for="longUrl">Enter the long URL: </label>
+        <input type="text" id="longUrl" placeholder="Enter URL">
+        <label for="shortUrl">Short URL: </label>
+        <input type="text" id="shortUrl">
+        <p class="readOnly">(Read Only)</p>
+        <div class="btnSet">
+            <button id="shortenBtn" type="submit">Shorten</button>
+            <button id="findBtn" type="submit">Find</button>
+            <button id="delBtn" type="submit">Delete</button>
+            <button id="exitBtn" type="submit">Exit</button>
+        </div>
+        <div class="urlListHdr">
+            <h3>Stored URLs:</h3>
+            <button id="delAllUrls" type="submit">Delete All URLs</button>
+        </div>
+        <hr>
+        <ul id="urlList"></ul>
+        <!-- <button aria-label="Close" id="close-button">❌</button> -->
+    </main>
+    <script src="app.js" defer></script>
+
+</body>
+</html>
