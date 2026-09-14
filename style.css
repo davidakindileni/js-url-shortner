@@ -55,7 +55,7 @@ button:hover, button:active {
   font-size: 0.9em;
 }
 
-#shortenBtn, #delBtn {
+#shortenBtn {
   margin-top: 1.5em;
   margin-bottom: 1.4em;
   color: #ffffff;
@@ -75,11 +75,23 @@ button:hover, button:active {
   background-color: #005FCC /* blue */;
 }
 
-#delBtn {
-  background-color: #B00020 /* red */;
+#delBtn:enabled {
+  background-color: #B00020 /* red */     ;
+  margin-top: 1.5em;
+  margin-bottom: 1.4em;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 1em;
+  width: 5em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#delBtn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  transform: none;
 }
 
 .urlListHdr {
